@@ -1,0 +1,262 @@
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: 'Roboto', sans-serif;
+ }
+
+ .card_icon {
+     height: 25px;
+     width: 25px;
+ }
+
+ img {
+     border-radius: 50%;
+ }
+
+ .user img {
+     height: 50px;
+     width: 50px;
+
+ }
+
+ .container {
+     display: grid;
+     grid-template-columns: 1fr 4fr;
+     min-height: 100vh;
+ }
+
+ .navbar {
+     background-color: #1992d4;
+     grid-row: 1 /3;
+     justify-content: start;
+     color: #f5fafd;
+     z-index: 0;
+     display: flex;
+     flex-direction: column;
+     gap: 50px;
+     line-height: 2;
+     padding-right: 50px;
+ }
+
+
+ .navbar_top,
+ .navbar_middle,
+ .navbar_bottom {
+     padding-left: 30px;
+ }
+
+ .navcontent {
+     display: flex;
+     align-items: center;
+     gap: 1rem;
+ }
+
+ .navcontent .logo {
+     height: 10%;
+     width: 50px;
+ }
+
+ .navbar a {
+     text-decoration: none;
+     color: #fff;
+ }
+
+ .navbar img {
+     height: 25px;
+     filter: invert(1);
+ }
+
+ .header {
+     grid-column: 2 /3;
+     box-shadow: 0 8px 8px -6px #ccd1d8;
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+     background-color: #fff;
+     z-index: 1;
+     padding: 25px 75px;
+ }
+
+ .header img {
+     height: 30px;
+ }
+
+ .search {
+     display: flex;
+     align-items: center;
+     width: 100%;
+     gap: 2rem;
+ }
+
+ .header .userprofile img {
+     height: 75px;
+     width: 75px;
+ }
+
+ .search input {
+     height: 30px;
+     width: 75%;
+     border: none;
+     border-radius: 20px;
+     background-color: #e2e8f0;
+     padding: 10px;
+ }
+
+ .header_left {
+     display: grid;
+     gap: 30px;
+ }
+
+ .userprofile {
+     display: flex;
+     gap: 15px;
+     align-items: center;
+ }
+
+ .header_right {
+     display: flex;
+     flex-direction: column;
+     align-items: start;
+     gap: 30px;
+ }
+
+ .profile_info {
+     display: flex;
+     align-items: center;
+ }
+
+ .profile_info img {
+     width: 40px;
+     height: 40px;
+     object-fit: cover;
+ }
+
+ .profile_info img:first-of-type {
+     margin-left: 50px;
+ }
+
+ .profile_info p {
+     margin: 0;
+     font-size: 1rem;
+     margin-left: 50px;
+ }
+
+
+ .action {
+     display: flex;
+     gap: 30px;
+     justify-content: center;
+     align-items: end;
+ }
+
+ .action button {
+     background-color: #1992d4;
+     color: #f5fafd;
+     border: none;
+     border-radius: 30px;
+     width: 100%;
+     min-width: 80px;
+     font-size: 16px;
+     font-weight: bold;
+     height: 3rem;
+ }
+
+ .main_content {
+     background-color: #e2e8f0;
+     display: grid;
+     grid-template-columns: 3fr 1fr;
+     gap: 30px;
+     padding: 30px;
+ }
+
+ .main_content h2 {
+     margin-bottom: 5px;
+ }
+
+ .project_cards {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 30px;
+ }
+
+ .projects .card {
+     background-color: #fff;
+     padding: 30px 30px;
+     box-shadow: 4px 4px 4px #ccd1d8;
+     border-left: 10px #f0b429 solid;
+     border-radius: 10px;
+     height: 255px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     gap: 20px;
+     overflow: auto;
+ }
+
+
+ .card_icon {
+     display: flex;
+     align-items: center;
+     gap: 20px;
+ }
+
+ .projects .card p {
+     display: -webkit-box;
+     -webkit-line-clamp: 6;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+
+ .side_content {
+     display: flex;
+     flex-direction: column;
+     grid-template-columns: 1fr 1fr;
+ }
+
+ .announcement .card,
+ .trending .card {
+     background-color: #fff;
+     box-shadow: 4px 4px 4px 4px #ccd1d8;
+     height: calc(245px * 1.5);
+     padding: 20px;
+     border-radius: 10px;
+     display: grid;
+     grid-template-rows: repeat(auto-fit, 1fr);
+ }
+
+ .announcement {
+     margin-bottom: 2rem;
+     /* Adjust this value for desired space */
+ }
+
+ .trending {
+     margin-top: 1.5rem;
+     /* Adjust this value for desired space */
+ }
+
+ .announcement_info {
+     padding: 15px;
+     overflow: hidden;
+     height: 100%;
+ }
+
+ .announcement_info p {
+     margin: 5px 0px 15px 0px;
+     display: -webkit-box;
+     -webkit-line-clamp: 3;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+
+ .user {
+     display: flex;
+     gap: 1rem;
+     align-items: center;
+ }
+
+ .user img {
+     height: 50px;
+     width: 50px;
+ }
